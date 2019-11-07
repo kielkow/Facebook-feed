@@ -1,9 +1,11 @@
-import React from 'react';
+import React, { Component } from 'react';
+
+import '../styles/Header.css'
 
 class Header extends Component{
   render(){
     return (
-      <header>
+      <header className="Header">
         <h1>Facebook</h1>
       </header>
     )

@@ -9,7 +9,7 @@ function Comment({ comment }){
   );
 }
 
-CommentItem.defaultProps = {
+Comment.defaultProps = {
   id: 0,
   author: {
     name: "Default",
@@ -18,7 +18,7 @@ CommentItem.defaultProps = {
   content: "Content default"
 };
 
-CommentItem.protoTypes = {
+Comment.protoTypes = {
   id: PropTypes.number,
   author: {
     name: PropTypes.string,

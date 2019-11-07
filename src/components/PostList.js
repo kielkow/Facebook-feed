@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 
 import Post from './Post';
-import Comment from './Comment';
 
 class PostList extends Component{
   state = {
@@ -26,9 +25,43 @@ class PostList extends Component{
         ]
       },
       {
-        id: 2
-        // Restante dos dados de um novo post
-      }
+        id: 2,
+        author: {
+          name: "Julio Alcantara",
+          avatar: "http://url-da-imagem.com/imagem.jpg"
+        },
+        date: "04 Jun 2019",
+        content: "Pessoal, alguém sabe se a Rocketseat está contratando?",
+        comments: [
+          {
+            id: 1,
+            author: {
+              name: "Diego Fernandes",
+              avatar: "http://url-da-imagem.com/imagem.jpg"
+            },
+            content: "Conteúdo do comentário"
+          }
+        ]
+      },
+      {
+        id: 3,
+        author: {
+          name: "Julio Alcantara",
+          avatar: "http://url-da-imagem.com/imagem.jpg"
+        },
+        date: "04 Jun 2019",
+        content: "Pessoal, alguém sabe se a Rocketseat está contratando?",
+        comments: [
+          {
+            id: 1,
+            author: {
+              name: "Diego Fernandes",
+              avatar: "http://url-da-imagem.com/imagem.jpg"
+            },
+            content: "Conteúdo do comentário"
+          }
+        ]
+      },
     ]
   };
 
@@ -54,16 +87,10 @@ class PostList extends Component{
         <ul>
           {this.state.posts.map(post => (
             <Post 
-              key={id} 
+              key={post.id} 
               post={post} 
             /> 
-          ))},
-          {this.state.posts.comments.map(comment => (
-            <Comment 
-              key={id} 
-              comment={comment} 
-            /> 
-          ))},
+          ))}
         </ul>
       </form>
     )

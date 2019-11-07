@@ -1,10 +1,23 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { state } from './PostList';
 
-function Post({ post }){
+import Comment from './Comment';
+import '../styles/Post.css'
+
+function Post({ post, comment }){
   return (
     <li>
-      {post}
+      <div className="Post">
+        <ul>
+          {this.state.posts.map(comment => (
+            <Comment 
+              key={comment.id} 
+              comment={comment} 
+            /> 
+          ))}
+        </ul>
+      </div>
     </li>
   );
 }
