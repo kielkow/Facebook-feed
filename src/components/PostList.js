@@ -48,38 +48,22 @@ class PostList extends Component{
     }
   }
 
-  // Executado quando o componente deixa de existir 
-  componentWillUnmount(){}
-
-  handleInputChange = e => {
-    this.setState({newPost: e.target.value})
-  }
-
-  handleSubmit = e => {
-    e.preventDefault();
-
-    this.setState({ 
-      posts: [...this.state.posts, this.state.newPost ],
-      newPost: ''
-    })
-  }
-
-  handleDelete = (post) => {
-    this.setState({
-      techs: this.state.posts.filter(p => p !== post)
-    })
-  }
-
   render(){
     return (
-      <form onSubmit={this.handleSubmit}>
+      <form>
         <ul>
           {this.state.posts.map(post => (
             <Post 
               key={id} 
               post={post} 
             /> 
-          ))}
+          ))},
+          {this.state.posts.comments.map(comment => (
+            <Comment 
+              key={id} 
+              comment={comment} 
+            /> 
+          ))},
         </ul>
       </form>
     )
