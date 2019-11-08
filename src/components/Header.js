@@ -5,6 +5,7 @@ class Header extends Component{
     return (
       <header id="header">
         <h1>Facebook</h1>
+        <a href="#"><b>Meu perfil</b></a>
       </header>
     )
   }

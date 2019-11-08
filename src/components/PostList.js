@@ -22,7 +22,7 @@ class PostList extends Component{
               avatar: "http://url-da-imagem.com/imagem.jpg"
             },
             content: "Conteúdo do comentário"
-          }
+          },
         ]
       },
       {
