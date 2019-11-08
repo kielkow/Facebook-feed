@@ -84,7 +84,7 @@ class PostList extends Component{
 
   render(){
     return (
-      <form>
+      <form id="postlist">
         <div>
           <ul>
             {this.state.posts.map(post => <Post key={post.id} data={post} />)}

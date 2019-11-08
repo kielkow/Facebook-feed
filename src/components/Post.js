@@ -3,8 +3,6 @@ import PropTypes from 'prop-types';
 
 import Comment from './Comment';
 
-import '../styles/Post.css'
-
 function Post({ data }){
   return (
     <li id="post">
