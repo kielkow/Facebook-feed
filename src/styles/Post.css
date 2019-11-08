@@ -1,7 +1,4 @@
-li div{
-  position: absolute;
-  width: 700px;
-  height: 250px;
-  left: 162px;
-  top: 84px;
+#post {
+  list-style-type: none;
+  border-bottom:  2px solid black;
 }

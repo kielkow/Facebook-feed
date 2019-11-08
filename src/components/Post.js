@@ -7,8 +7,8 @@ import '../styles/Post.css'
 
 function Post({ data }){
   return (
-    <li>
-      POST
+    <li id="post">
+      <p>POST:</p>
         <ul>
             {data.comments.map(
               comment => <Comment key={comment.id} data = {comment} />
