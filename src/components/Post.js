@@ -6,7 +6,10 @@ import Comment from './Comment';
 function Post({ data }){
   return (
     <li id="post">
-      <p>POST:</p>
+      <div id="posting">
+        <p id="postingName">{data.author.name}</p>
+        <p id="postingContent">{data.content}</p>
+      </div>
         <ul>
             {data.comments.map(
               comment => <Comment key={comment.id} data = {comment} />

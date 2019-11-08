@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-function Comment(){
+function Comment({ data }){
   return (
     <li id="comment">
       <p>COMMENT:</p>
