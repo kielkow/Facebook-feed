@@ -61,7 +61,7 @@ class PostList extends Component{
             content: "Conteúdo do comentário"
           }
         ]
-      },
+      }
     ]
   };
 
@@ -84,14 +84,11 @@ class PostList extends Component{
   render(){
     return (
       <form>
-        <ul>
-          {this.state.posts.map(post => (
-            <Post 
-              key={post.id} 
-              post={post} 
-            /> 
-          ))}
-        </ul>
+        <div>
+          <ul>
+            {this.state.posts.map(post => <Post key={post.id} data={post} />)}
+          </ul>
+        </div>
       </form>
     )
   }
