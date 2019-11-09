@@ -1,10 +1,13 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
+import icon from '../assets/icon.png'
+
 function Comment({ data }){
   return (
     <li id="comment">
       <div id="commenting">
+        <img width="32" height="32" src={icon}/>
         <p><b>{data.author.name}</b> {data.content}</p>
       </div>
     </li>

@@ -41,6 +41,14 @@ class PostList extends Component{
               avatar: "http://url-da-imagem.com/imagem.jpg"
             },
             content: "Conteúdo do comentário"
+          },
+          {
+            id: 2,
+            author: {
+              name: "Claudio Romero",
+              avatar: "http://url-da-imagem.com/imagem.jpg"
+            },
+            content: "Conteúdo do comentário 2"
           }
         ]
       },
@@ -60,6 +68,14 @@ class PostList extends Component{
               avatar: "http://url-da-imagem.com/imagem.jpg"
             },
             content: "Conteúdo do comentário"
+          },
+          {
+            id: 2,
+            author: {
+              name: "Claudio Romero",
+              avatar: "http://url-da-imagem.com/imagem.jpg"
+            },
+            content: "Conteúdo do comentário 2"
           }
         ]
       }
