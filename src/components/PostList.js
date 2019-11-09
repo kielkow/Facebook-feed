@@ -21,61 +21,61 @@ class PostList extends Component{
               name: "Diego Fernandes",
               avatar: "http://url-da-imagem.com/imagem.jpg"
             },
-            content: "Conteúdo do comentário"
+            content: "Temos vagas para desenvolvedor front-end, back-end e mobile!"
           },
         ]
       },
       {
         id: 2,
         author: {
-          name: "Julio Alcantara",
+          name: "Carlos Silva",
           avatar: "http://url-da-imagem.com/imagem.jpg"
         },
         date: "04 Jun 2019",
-        content: "Pessoal, alguém sabe se a Rocketseat está contratando?",
+        content: "Galera o que vocês acham de aplicações feitas em ReactJS?",
         comments: [
           {
             id: 1,
             author: {
-              name: "Diego Fernandes",
+              name: "Ricardo Gomes",
               avatar: "http://url-da-imagem.com/imagem.jpg"
             },
-            content: "Conteúdo do comentário"
+            content: "Super performáticas!"
           },
           {
             id: 2,
             author: {
-              name: "Claudio Romero",
+              name: "Lucas Ribeiro",
               avatar: "http://url-da-imagem.com/imagem.jpg"
             },
-            content: "Conteúdo do comentário 2"
+            content: "São as melhores aplicações #VaiDeReact"
           }
         ]
       },
       {
         id: 3,
         author: {
-          name: "Julio Alcantara",
+          name: "Matheus Oliveira",
           avatar: "http://url-da-imagem.com/imagem.jpg"
         },
         date: "04 Jun 2019",
-        content: "Pessoal, alguém sabe se a Rocketseat está contratando?",
+        content: "Galera alguém sabe de vagas para desenvolvedor NodeJs?",
         comments: [
           {
             id: 1,
             author: {
-              name: "Diego Fernandes",
+              name: "Bruno Almeida",
               avatar: "http://url-da-imagem.com/imagem.jpg"
             },
-            content: "Conteúdo do comentário"
+            content: "Tenho várias que posso te passar Matheus, me chama no privado"
           },
           {
             id: 2,
             author: {
-              name: "Claudio Romero",
+              name: "Alex Monteiro",
               avatar: "http://url-da-imagem.com/imagem.jpg"
             },
-            content: "Conteúdo do comentário 2"
+            content: "Matheus tenho várias aqui também ! "
           }
         ]
       }
